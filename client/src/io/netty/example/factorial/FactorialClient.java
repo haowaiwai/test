@@ -16,12 +16,12 @@
 package io.netty.example.factorial;
 
 import java.net.InetSocketAddress;
+import java.util.concurrent.Executors;
+
 import org.jboss.netty.bootstrap.ClientBootstrap;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelFuture;
 import org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory;
-
-import static java.util.concurrent.Executors.*;
 
 /**
  * Sends a sequence of integers to a {@link "FactorialServer"} to calculate
@@ -42,7 +42,9 @@ public class FactorialClient {
     public void run() {
         // Configure the client.
         ClientBootstrap bootstrap = new ClientBootstrap(
-                new NioClientSocketChannelFactory(newCachedThreadPool()));
+                new NioClientSocketChannelFactory(
+                Executors.newCachedThreadPool(),
+                Executors.newCachedThreadPool()));
 
         // Set up the event pipeline factory.
         bootstrap.setPipelineFactory(new FactorialClientPipelineFactory(count));
