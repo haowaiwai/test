@@ -22,7 +22,7 @@ import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
 
 /**
- * Receives a sequence of integers from a {@link FactorialClient} to calculate
+ * Receives a sequence of integers from a {@link “FactorialClient"} to calculate
  * the factorial of the specified integer.
  */
 public class FactorialServer {
@@ -37,7 +37,8 @@ public class FactorialServer {
         // Configure the server.
         ServerBootstrap bootstrap = new ServerBootstrap(
                 new NioServerSocketChannelFactory(
-                        Executors.newCachedThreadPool()));
+                Executors.newCachedThreadPool(),
+                Executors.newCachedThreadPool()));
 
         // Set up the event pipeline factory.
         bootstrap.setPipelineFactory(new FactorialServerPipelineFactory());
