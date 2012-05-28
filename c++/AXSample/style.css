@@ -1,0 +1,29 @@
+.news{   
+    width:300px;   
+    height:180px;   
+    border:1px solid #66CCFF;   
+}   
+  
+.label{   
+    width:25px;   
+    height:15px;   
+    border:1px solid #66CCFF;   
+    border-right:0px;   
+    border-bottom:0px;   
+    font-size:12px;   
+    line-height:15px;   
+    text-align:center;   
+    float:right;   
+    margin-top:165px;   
+}   
+  
+.bgcolor{   
+    background-color:#66CCFF;   
+}   
+  
+.n{   
+    width:300px;   
+    height:180px;   
+    position:absolute;      
+    z-index:-999;   
+}

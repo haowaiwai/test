@@ -1,0 +1,25 @@
+<html>
+<script src="jquery-1.7.1.js" type="text/javascript"></script>
+<body>
+<table id="t2"  width="910" height="146" border="0" cellpadding="0" cellspacing="0" background="xiabg.png" align="center">
+<tr>
+<td width="600"></td>
+<td><img src="f01.png"></img></td>
+<td><img src="g01.png"></img></td>
+<td><img src="h01.png"></img></td>
+<td><img src="i01.png"></img></td>
+</tr>
+</table>
+<script type="text/javascript">
+$(document).ready(function (){
+	$("#t2 img").bind("mouseover",function(){
+			var src=$(this).attr("src");
+			$(this).attr("src",src.replace("01","02"));
+		}).bind("mouseout",function(){
+			var src=$(this).attr("src");
+			$(this).attr("src",src.replace("02","01"));
+		});	
+})
+</script>
+</body>
+</html>

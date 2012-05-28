@@ -1,0 +1,1 @@
+﻿<menu>菜单</menu><ok>确定</ok><cancel>取消</cancel>

@@ -1,0 +1,27 @@
+HKCR
+{
+	AXSample.TestCtl.1 = s 'TestCtl Class'
+	{
+		CLSID = s '{0C05DDCB-049A-42FE-8B0F-05F4AEE99AEA}'
+	}
+	AXSample.TestCtl = s 'TestCtl Class'
+	{
+		CLSID = s '{0C05DDCB-049A-42FE-8B0F-05F4AEE99AEA}'
+		CurVer = s 'AXSample.TestCtl.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0C05DDCB-049A-42FE-8B0F-05F4AEE99AEA} = s 'TestCtl Class'
+		{
+			ProgID = s 'AXSample.TestCtl.1'
+			VersionIndependentProgID = s 'AXSample.TestCtl'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Free'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{0A55D180-2587-41D6-8BC7-DA63A0F43096}'
+		}
+	}
+}

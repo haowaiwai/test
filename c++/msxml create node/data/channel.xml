@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SI>
+    <CHANNEL id="C00001" name="北京交通台" type="AD">
+        <SERVICE>
+				<type>AU</type>
+				<frequency>210432000</frequency>
+				<bandwidth>0</bandwidth>
+				<EIdx>0</EIdx>
+				<serviceId>49155</serviceId>
+				<SCIdS>0</SCIdS>
+                                <Timeout>120</Timeout>
+	</SERVICE>
+	<SERVICE>
+				<type>MOT</type>
+				<frequency>213856000</frequency>
+				<bandwidth>0</bandwidth>
+				<EIdx>0</EIdx>
+				<serviceId>4039114757</serviceId>
+				<SCIdS>0</SCIdS>
+                                <Timeout>120</Timeout>
+	</SERVICE>
+    </CHANNEL>
+    <CHANNEL id="C00002" name="北京音乐台" type="AD">
+        <SERVICE>
+				<type>AU</type>
+				<frequency>212144000</frequency>
+				<bandwidth>0</bandwidth>
+				<EIdx>0</EIdx>
+				<serviceId>49157</serviceId>
+				<SCIdS>0</SCIdS>
+                                <Timeout>60</Timeout>
+			</SERVICE>
+			<SERVICE>
+				<type>MOT</type>
+				<frequency>213856000</frequency>
+				<bandwidth>0</bandwidth>
+				<EIdx>0</EIdx>
+				<serviceId>4039114757</serviceId>
+				<SCIdS>0</SCIdS>
+                                <Timeout>60</Timeout>
+			</SERVICE>
+    </CHANNEL>
+	<CHANNEL id="C10001" name="BWS" type="DD">
+			<SERVICE>
+				<type>MOT</type>
+				<frequency>210432000</frequency>
+				<bandwidth>0</bandwidth>
+				<EIdx>0</EIdx>
+				<serviceId>4039114761</serviceId>
+				<SCIdS>0</SCIdS>
+                                <Timeout>100</Timeout>
+			</SERVICE>
+    </CHANNEL>
+<CHANNEL id="C20001" name="GPS" type="DD">
+			<SERVICE>
+				<type>MOT</type>
+				<frequency>208720000</frequency>
+				<bandwidth>0</bandwidth>
+				<EIdx>0</EIdx>
+				<serviceId>4039114759</serviceId>
+				<SCIdS>0</SCIdS>
+                                <Timeout>60</Timeout>
+			</SERVICE>
+    </CHANNEL>
+<CHANNEL id="C30001" name="dazhe" type="DD">
+			<proglist>
+				<day>
+					<prog>
+						<description></description>
+						<startTime></startTime>
+						<endTime></endTime>
+					</prog>
+				</day>
+			</proglist>
+			<SERVICE>
+				<type>MOT</type>
+				<frequency>212144000</frequency>
+				<bandwidth>0</bandwidth>
+				<EIdx>0</EIdx>
+				<serviceId>4039114759</serviceId>
+				<SCIdS>0</SCIdS>
+				<Timeout>100</Timeout>
+			</SERVICE>
+		</CHANNEL>
+
+</SI>

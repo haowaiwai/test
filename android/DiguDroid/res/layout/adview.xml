@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:admobsdk="http://schemas.android.com/apk/res/com.icekirin.digudroid"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adview_txt_msg"/>
+  <com.admob.android.ads.AdView android:id="@+id/ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        admobsdk:backgroundColor="#000000" admobsdk:textColor="#FFFFFF"
+        admobsdk:keywords="Android application" admobsdk:refreshInterval="60" />
+  <com.admob.android.ads.AdView android:id="@+id/ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        admobsdk:backgroundColor="#000000" admobsdk:textColor="#FFFFFF"
+        admobsdk:keywords="Android application" admobsdk:refreshInterval="60" />
+</LinearLayout>

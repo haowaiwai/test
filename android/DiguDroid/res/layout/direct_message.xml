@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:admobsdk="http://schemas.android.com/apk/res/com.icekirin.digudroid"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:background="@drawable/bg_dao"
+	android:layout_height="fill_parent">
+
+	<ListView android:id="@+id/message_list"
+		android:cacheColorHint="#00000000" android:layout_width="fill_parent"		
+		android:layout_height="325dip">
+	</ListView>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/foot"
+		android:gravity="center" android:layout_gravity="center">
+		<TextView android:text="" android:id="@+id/page_text"
+			android:textColor="@color/black" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:visibility="visible" android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.admob.android.ads.AdView android:id="@+id/ad"
+            android:layout_width="260px" android:layout_height="wrap_content"
+            admobsdk:backgroundColor="#FFFFFF" admobsdk:textColor="#000000"
+            admobsdk:keywords="Android application"
+            admobsdk:testing="false"
+            admobsdk:refreshInterval="60" />
+        <Button android:id="@+id/refresh" android:text="@string/twitterpage_btn_refresh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

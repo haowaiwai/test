@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:paddingLeft="5dip"
+    android:paddingTop="2dip" android:paddingBottom="2dip"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:paddingRight="5dip">
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/userHead"
+        android:paddingTop="3dip" android:src="@drawable/icon" />
+    <LinearLayout android:orientation="vertical"
+        android:paddingLeft="5dip" android:layout_width="280dip"
+        android:layout_height="wrap_content" android:paddingRight="5dip">
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/screen_name"
+                android:textColor="@color/blue_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="15px"
+                android:text="天空" />
+            <TextView
+                android:paddingLeft="5dip" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="12px"
+                android:textColor="@color/black" android:text="/" />
+            <TextView android:id="@+id/name"
+                android:paddingLeft="5dip" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="12px"
+                android:textColor="@color/blue_2" android:text="sky" />
+        </LinearLayout>
+        <TextView android:id="@+id/intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15px" android:paddingTop="3dip"
+            android:paddingBottom="3dip" android:text="'文明用语'，真够好吃的！\n等你下一道作品！" />        
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--偏好设置,更新间隔,显示-->
+    <string-array name="settings_update_entries">
+        <item>不更新</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>30分钟</item>
+    </string-array>
+
+    <!--偏好设置,更新间隔,可选值-->
+    <string-array name="settings_update_entryvalues">
+        <item>10000</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+    </string-array>
+</resources>

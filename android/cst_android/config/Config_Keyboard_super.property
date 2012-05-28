@@ -1,0 +1,11 @@
+package config;
+
+public class Config {
+	//是否是触摸屏
+	public static final boolean ifTouch = false;
+	public static final String createTime = "";
+	//是否是大字体
+	public static final boolean ifBigFont = false;
+	public static final boolean ifSuperSize = true;
+	
+}

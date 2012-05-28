@@ -1,0 +1,43 @@
+MSXML2::IXMLDOMDocumentPtr m_pDocBuffer; 
+	MSXML2::IXMLDOMElementPtr  m_pRoot; 
+	TCHAR source[] = L"<?xml version=\"1.0\" encoding=\"gbk\"?>\
+					  <broadcast>\
+					  <programname>中文</programname>\
+					  <indexfile>\\\\192.168.14.111\\public\\1.html</indexfile>\
+					  <RePetionInterval>10</RePetionInterval>\
+					  </broadcast>\
+					  ";
+	HRESULT hr =m_pDocBuffer.CreateInstance(__uuidof(MSXML2::DOMDocument)); //DOMDocument
+	if(!SUCCEEDED(hr)) 
+	{ 
+		return ;
+	}
+	if(m_pDocBuffer->loadXML(source)==VARIANT_TRUE)
+	{
+		MSXML2::IXMLDOMNodePtr     pElement; 
+		MSXML2::IXMLDOMNodePtr     pNode;
+		MSXML2::IXMLDOMElementPtr  pRoot= m_pDocBuffer->GetdocumentElement();
+		MSXML2::IXMLDOMNodeListPtr pNodeList=pRoot->GetchildNodes();
+		MSXML2::IXMLDOMNodeListPtr pNodeList2=NULL;
+
+		pRoot->GetchildNodes()->Getitem(long(0))->Puttext(L"<");
+		pRoot->GetchildNodes()->Getitem(long(1))->Puttext(L"路径");
+		pRoot->GetchildNodes()->Getitem(long(2))->Puttext(L"次数");
+		
+		for(int i = 0;i<1;i++)
+		{
+			pElement=m_pDocBuffer->createElement((_bstr_t)"file");
+			pNode = pRoot->appendChild(pElement);
+			pElement=m_pDocBuffer->createElement((_bstr_t)"starttime");
+			pElement->Puttext(L"aa");
+			pNode->appendChild(pElement);
+			pElement=m_pDocBuffer->createElement((_bstr_t)"endtime");
+			pElement->Puttext(L"bb");
+			pNode->appendChild(pElement);
+			pElement=m_pDocBuffer->createElement((_bstr_t)"datasource");
+			pElement->Puttext(L"cc");
+			pNode->appendChild(pElement);
+		}
+		AfxMessageBox(m_pDocBuffer->Getxml());
+	}
+	m_pDocBuffer.Release();

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APP id="AD00001" name="NB" type="NB">
+		<CHANNEL id="C00001" name="北京交通广播" type="AD">
+			<proglist>
+				<day date="20090612">
+					<prog id="1039-001" name="一路畅通">
+						<description>早间路况节目</description>
+						<startTime>7:30</startTime>
+
+						<endTime>10:00</endTime>
+					</prog>
+					<prog id="1039-002" name="新闻资讯">
+						<description>早间新闻节目</description>
+						<startTime>10:00</startTime>
+						<endTime>11:00</endTime>
+					</prog>
+
+				</day>
+				<day date="20090613">
+					<prog id="1039-001" name="一路畅通">
+						<description>早间路况节目</description>
+						<startTime>7:30</startTime>
+						<endTime>10:00</endTime>
+					</prog>
+
+					<prog id="1039-002" name="新闻资讯">
+						<description>早间新闻节目</description>
+						<startTime>10:00</startTime>
+						<endTime>11:00</endTime>
+					</prog>
+				</day>
+			</proglist>
+		</CHANNEL> 
+		<CHANNEL id="C00002" name="北京音乐广播" type="AD">
+			<proglist>
+				<day date="20090612">
+					<prog id="851-001" name="早间金曲">
+
+						<description>流行经典歌曲</description>
+						<startTime>7:30</startTime>
+						<endTime>10:00</endTime>
+					</prog>
+					<prog id="851-002" name="音乐排行榜">
+						<description>早间新闻节目</description>
+						<startTime>10:00</startTime>
+
+						<endTime>11:00</endTime>
+					</prog>
+				</day>
+				<day date="20090613">
+					<prog id="851-001" name="早间金曲">
+						<description>流行经典歌曲</description>
+						<startTime>7:30</startTime>
+
+						<endTime>10:00</endTime>
+					</prog>
+					<prog id="851-002" name="音乐排行榜">
+						<description>早间新闻节目</description>
+						<startTime>10:00</startTime>
+						<endTime>11:00</endTime>
+					</prog>
+
+				</day>
+			</proglist>
+		</CHANNEL>
+	</APP>

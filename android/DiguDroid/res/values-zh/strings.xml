@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">嘀咕</string>
+    
+    <!-- AndroidManifest -->
+    <string name="label_Main">主菜单</string>
+    <string name="label_TwitterPage">消息</string>
+    <string name="label_FriendsTabActivity">好友</string>
+    <string name="label_Friends">好友</string>
+    <string name="label_MessageTabActivity">私信(悄悄话)</string>
+    <string name="label_Message">私信</string>
+    <string name="label_About">关于</string>
+    <string name="label_UserInfo">用户信息</string>    
+    <string name="label_MsgInfo">消息内容</string>
+    <string name="label_WriteMsgDialog">发消息</string>
+    <string name="label_DirectMessageEditor">写悄悄话</string>
+    
+    <!-- public  -->
+    <string name="public_txt_plesse_wait">请稍等...</string>
+    <string name="public_txt_doing">正在处理</string>
+    <string name="public_btn_delete">删除</string>
+    <string name="public_btn_cancel">取消</string>
+    <string name="public_title_attention">注意</string>
+    <string name="public_btn_reply">回复</string>
+    <string name="public_btn_bookmark">收藏</string>
+    <string name="public_btn_zz">转载</string>
+    <string name="public_btn_send">发送</string>
+    <string name="public_btn_return">返回</string>
+    <string name="public_btn_refresh">刷新</string>
+    <string name="public_btn_prevpage">上页</string>    
+    <string name="public_btn_nextpage">下页</string>
+    <string name="public_txt_loadpic">读取图片详细信息..</string>
+    <string name="public_txt_source">通过</string>
+    
+    <!-- Login -->
+    <string name="login_txt_not_null">用户名和密码不能为空!</string>    
+    <string name="login_txt_logining_digu">登录嘀咕中...</string>
+    <string name="login_txt_login_fail">登录失败</string>
+    <string name="login_txt_input_username">输入用户名</string>
+    <string name="login_txt_input_password">输入密码</string>
+    
+    <!-- Main -->
+    <string name="main_digu">嘀咕</string>
+    <string name="main_message">私信</string>
+    <string name="main_bookmark">收藏</string>
+    <string name="main_about">关于</string>
+    <string name="main_friends">好友</string>
+    <string name="main_exit">离开</string>
+
+    <!-- WriteMsg -->
+    <string name="send_ok">发送成功</string>
+    <string name="send_fail">发送失败</string>
+    <string name="reply_ok">回复成功</string>
+    <string name="reply_fail">回复失败</string>
+    <string name="zz_ok">转载成功</string>
+    <string name="zz_fail">转载失败</string>
+    
+    <!-- TwitterPage -->
+    <string name="twitterpage_btn_refresh">刷新</string>
+    <string name="twitterpage_btn_prevpage">上页</string>    
+    <string name="twitterpage_btn_nextpage">下页</string>
+    <string name="twitterpage_btn_write">嘀咕</string>
+    <string name="twitterpage_btn_public">广场</string>
+    <string name="twitterpage_btn_exit">退出</string>
+    <string name="twitterpage_txt_isfirstpage">已经是第一页</string>
+    <string name="twitterpage_btn_islastpage">已经是最后一页</string>
+    <string name="twitterpage_title_msg_op">消息操作菜单</string>
+    <string name="twitterpage_msg_confirm_delete">你确定要删除这条信息吗</string>
+    <string name="twitterpage_txt_get_net">读取服务器信息...</string>
+    <string name="twitterpage_txt_get_local">读取本地信息...</string>
+    <string name="twitterpage_txt_page">第%s页 每页%s条 共%s条</string>
+    
+    <!-- DirectMessage -->
+    <string name="direct_message">悄悄话</string>
+    <string name="system_message">通知</string>
+    <string name="write_direct_message">撰写</string>
+    <string name="select_your_follower_wait">选择跟随你的好友 加载中..</string>
+    <string name="select_your_follower">选择跟随你的好友</string>
+    <string name="do_not_null_message">不可以发空消息</string>
+    <string name="please_wait">请稍等</string>
+    <string name="sending_direct_message">正在发送悄悄话...</string>
+    <string name="sending_suess">发送成功</string>
+    <string name="loading_followers">正在加载跟随者列表..</string>
+    <string name="loading_friends_net">读取网络好友信息..</string>
+    <string name="all_friends">所有已跟随的人(%s人)</string>
+    <string name="all_followers">所有跟随我的人(%s人)</string>
+    <string name="my_friends">我跟随的</string>
+    <string name="my_followers">跟随我的</string>
+    
+    <!-- About -->
+    <string name="about_text">嘀咕(火兔) Android 客户端\n版本: 1.0.0 alpha\n</string>
+    
+    <!-- Adview广告 -->
+    <string name="adview_txt_msg">嘀咕是一个免费软件，如果你喜欢它，请点击下面的广告支持开发人员。谢谢！</string>
+    
+    <!-- 偏好设置 -->
+    <string name="settings_profile">登录信息</string>
+    <string name="settings_system">系统设置</string>
+    <string name="settings_username_title">用户名</string>
+    <string name="settings_username_summary">登录嘀咕的用户名</string>
+    <string name="settings_username_dialog_title">用户名</string>
+    <string name="settings_password_title">密码</string>
+    <string name="settings_password_summary">登录嘀咕的密码</string>
+    <string name="settings_password_dialog_title">密码</string>
+    <string name="settings_is_on_tray_title">是否在任务栏显示图标</string>
+    <string name="settings_is_on_tray_summary">任务栏中显示嘀咕小图标</string>
+    <string name="settings_update_title">更新间隔</string>
+    <string name="settings_update_summary">设置自动更新的时间间隔</string>
+    <string name="settings_update_dialog_title">选择自动更新的时间间隔</string>
+    <string name="settings_update_default">15</string>
+    <string name="local_service_controller">自动刷新服务</string>
+    <string name="btnStartFService">开启</string>
+    <string name="btnStopFService">关闭</string>
+
+</resources>

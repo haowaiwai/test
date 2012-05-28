@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="app_name">Digu</string>
+    
+    <!-- AndroidManifest -->
+    <string name="label_Main">Main menu</string>
+    <string name="label_TwitterPage">Message</string>
+    <string name="label_FriendsTabActivity">Friends</string>
+    <string name="label_Friends">Friends</string>
+    <string name="label_MessageTabActivity">Direct Message</string>
+    <string name="label_Message">Direct Message</string>
+    <string name="label_About">About</string>
+    <string name="label_UserInfo">UserInfo</string>    
+    <string name="label_MsgInfo">Message Info</string>
+    <string name="label_WriteMsgDialog">Send Message</string>
+    <string name="label_DirectMessageEditor">Send direct message</string>
+    
+    <!-- public  -->
+    <string name="public_txt_plesse_wait">Please Wait..</string>
+    <string name="public_txt_doing">Processing</string>
+    <string name="public_btn_delete">delete</string>
+    <string name="public_btn_cancel">cancel</string>
+    <string name="public_title_attention">attention</string>
+    <string name="public_btn_reply">reply</string>
+    <string name="public_btn_bookmark">bookmark</string>
+    <string name="public_btn_zz">Reproduced</string>
+    <string name="public_btn_send">send</string>
+    <string name="public_btn_return">return</string>
+    <string name="public_btn_refresh">refresh</string>
+    <string name="public_btn_prevpage">prev page</string>    
+    <string name="public_btn_nextpage">next page</string>
+    <string name="public_txt_loadpic">loading picture..</string>
+    <string name="public_txt_source">from</string>
+    
+    <!-- Login -->
+    <string name="login_txt_not_null">username and password can not be null!</string>    
+    <string name="login_txt_logining_digu">logining digu..</string>
+    <string name="login_txt_login_fail">login fail</string>
+    <string name="login_txt_input_username">input username</string>
+    <string name="login_txt_input_password">input password</string>
+    
+    <!-- Main -->
+    <string name="main_digu">Digu</string>
+    <string name="main_message">Direct Message</string>
+    <string name="main_bookmark">BookMark</string>
+    <string name="main_about">About</string>
+    <string name="main_friends">Friends</string>
+    <string name="main_exit">Exit</string>
+
+    <!-- WriteMsg -->
+    <string name="send_ok">Send Success</string>
+    <string name="send_fail">Send Fail</string>
+    <string name="reply_ok">Reply Success</string>
+    <string name="reply_fail">Reply Fail</string>
+    <string name="zz_ok">Reproduced Success</string>
+    <string name="zz_fail">Reproduced Fail</string>
+    
+    <!-- TwitterPage -->
+    <string name="twitterpage_btn_refresh">refresh</string>
+    <string name="twitterpage_btn_prevpage">prev page</string>    
+    <string name="twitterpage_btn_nextpage">next page</string>
+    <string name="twitterpage_btn_write">digu</string>
+    <string name="twitterpage_btn_public">public msg</string>
+    <string name="twitterpage_btn_exit">exit</string>
+    <string name="twitterpage_txt_isfirstpage">it is the first page yet</string>
+    <string name="twitterpage_btn_islastpage">it is the last page yet</string>
+    <string name="twitterpage_title_msg_op">message operation</string>
+    <string name="twitterpage_msg_confirm_delete">confirm to delete this?</string>
+    <string name="twitterpage_txt_get_net">loading from server..</string>
+    <string name="twitterpage_txt_get_local">loading from local db..</string>
+    <string name="twitterpage_txt_page">Page%s  %smessages/page  Total %smessages</string>
+    
+    <!-- DirectMessage -->
+    <string name="direct_message">direct message</string>
+    <string name="system_message">system message</string>
+    <string name="write_direct_message">write</string>
+    <string name="select_your_follower_wait">select your follower loading..</string>
+    <string name="select_your_follower">select your follower</string>
+    <string name="do_not_null_message">do not send null message</string>
+    <string name="please_wait">please wait</string>
+    <string name="sending_direct_message">sending direct message..</string>
+    <string name="sending_suess">send success</string>
+    <string name="loading_followers">loading followers..</string>
+    <string name="loading_friends_net">loading friends form server..</string>
+    <string name="all_friends">all friends(%s)</string>
+    <string name="all_followers">all followers(%s)</string>
+    <string name="my_friends">my friends</string>
+    <string name="my_followers">my followers</string>
+    
+    <!-- About -->
+    <string name="about_text">Digu Android client\nversion: 1.0.0 alpha\n</string>
+    
+    <!-- Adview广告 -->
+    <string name="adview_txt_msg">Digu is free，if you like it，I am pleased to. </string>
+
+</resources>

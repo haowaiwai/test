@@ -1,0 +1,17 @@
+﻿生成启动时间为 2012/5/8 16:47:14。
+     1>项目“F:\github\haoyy-test\c++\TestVersion\TestVersion\TestVersion.vcxproj”在节点 2 上(build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“F:\github\haoyy-test\c++\TestVersion\Debug\”。
+       InitializeBuildStatus:
+         正在对“Debug\TestVersion.unsuccessfulbuild”执行 Touch 任务。
+       PreBuildEvent:
+         "D:\Program Files\TortoiseSVN\bin\subwcrev.exe" . "F:\github\haoyy-test\c++\TestVersion\TestVersion\version_template.h" "F:\github\haoyy-test\c++\TestVersion\TestVersion\ version.h"
+         :VCEnd
+         SubWCRev : E155007: 'F:\github\haoyy-test\c++\TestVersion\TestVersion' is not a working copy
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(103,5): error MSB3073: 命令“"D:\Program Files\TortoiseSVN\bin\subwcrev.exe" . "F:\github\haoyy-test\c++\TestVersion\TestVersion\version_template.h" "F:\github\haoyy-test\c++\TestVersion\TestVersion\ version.h"
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(103,5): error MSB3073: :VCEnd”已退出，代码为 10。
+     1>已完成生成项目“F:\github\haoyy-test\c++\TestVersion\TestVersion\TestVersion.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.31

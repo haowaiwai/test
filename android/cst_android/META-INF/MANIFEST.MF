@@ -1,0 +1,129 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: config/Config_Keyboard_super.property
+SHA1-Digest: U8OkdrhneNd4xmtNEVD780Uu3lI=
+
+Name: assets/res/pre.png
+SHA1-Digest: cguooNCVbsQAzMGwYnv0Yo1OvI0=
+
+Name: assets/res/2.png
+SHA1-Digest: mSHTIdOfpZBvIq09MJJlAu064Rc=
+
+Name: config/Config_Touch_BigFont.property
+SHA1-Digest: tU/4P2nZYbOmqvhfO3VEjwKRxoA=
+
+Name: AndroidManifest.xml
+SHA1-Digest: PtnQOYXAXvkXvEEAXnRZ/Zi0B5I=
+
+Name: config/Config_Touch.property
+SHA1-Digest: fxy/DCHjmvawxmePofRxb1/3l/A=
+
+Name: assets/res/fail.png
+SHA1-Digest: 5aQm5WuCXxaDLR4sQ3ZVU5rMx2M=
+
+Name: config/Config_Keyboard_BigFont.property
+SHA1-Digest: BWLY+LV5IZ3f6x0RgGV+c1PP38s=
+
+Name: assets/res/up_w.png
+SHA1-Digest: upDlVVZqnR0DXGvHX90UfZ68ifk=
+
+Name: assets/res/bg.png
+SHA1-Digest: fStLk0ysG5AWcTlc0B2YE6nfxbg=
+
+Name: assets/res/down.png
+SHA1-Digest: lHyJjMaZK6H6G+WPWhepBvi50kw=
+
+Name: assets/res/profile.txt
+SHA1-Digest: iCL4i6bIPyvj+0qmgN8uDySpZFs=
+
+Name: assets/res/thunder1.png
+SHA1-Digest: USabIQ4D0w6+sJw5H7/DWA0z78k=
+
+Name: assets/res/right.png
+SHA1-Digest: FpgHd7VhDMKws7Ge/BEz/pVxl7U=
+
+Name: assets/res/4.png
+SHA1-Digest: 6Bb9x2THrfpM9xVfJB9ZFLgYQf8=
+
+Name: assets/res/0.png
+SHA1-Digest: ykAFhmAEFKECzxZXOHc/JNMoKsg=
+
+Name: assets/res/left.png
+SHA1-Digest: dshkERtNXCiXUcc+eWTYlZv3Nak=
+
+Name: assets/res/logo.png
+SHA1-Digest: 3vRndLGqZBRdKWzp4IqUTbWaHkA=
+
+Name: res/drawable/icon.png
+SHA1-Digest: nRdbs4FTgSO45sCsq9p6eMDzQ+4=
+
+Name: assets/res/1.png
+SHA1-Digest: T1UjJEdUqUDPcHmG0YddRqi0eKY=
+
+Name: classes.dex
+SHA1-Digest: E5QY11syyTfNLKGdhCtZGJ8sdmY=
+
+Name: assets/res/wait.png
+SHA1-Digest: y2Y5pdyVByPwQL7DXYwx+r4QVoE=
+
+Name: assets/res/down_w.png
+SHA1-Digest: N+BzJzivfJINsQg36MadhaxnGqM=
+
+Name: assets/res/jiepan.png
+SHA1-Digest: XTqiSWitCdRsd9OwxyUyJH6aKTo=
+
+Name: assets/res/alterKB.png
+SHA1-Digest: jCY2xNfS+uz/VzfTd/hCKY4N9AI=
+
+Name: assets/res/index.png
+SHA1-Digest: aBkKtyegWryhgCuKDfVx2JWHDFM=
+
+Name: assets/res/thunder.png
+SHA1-Digest: ekwk95b67gPnh3uuFYhiucuX6oI=
+
+Name: assets/res/success.png
+SHA1-Digest: kr+5EJDFZQgQXcfOsskGzK6IcHw=
+
+Name: assets/res/next.png
+SHA1-Digest: zzIu8sZ+G8DX8tjbBJea5AjTbyw=
+
+Name: assets/res/fall.png
+SHA1-Digest: WeRKGVpoXZ73WxVNMCuNB/0Q70A=
+
+Name: config/Config_Touch_Super.property
+SHA1-Digest: wP5sZsNjyUj+T3vneLTOYgRMKTs=
+
+Name: assets/res/3.png
+SHA1-Digest: G4qvbLNRhZAGgOGQN2RW1wAtXC8=
+
+Name: config/Config_Keyboard.property
+SHA1-Digest: RmwzpBWmQTY+5cymTsAcGMObMJM=
+
+Name: resources.arsc
+SHA1-Digest: ebVP1IDBjqV4Tcxoqx0u/FaphE0=
+
+Name: assets/res/up.png
+SHA1-Digest: qYg02FtoGYt34RxinWF91DyvBjw=
+
+Name: assets/res/TMBG.png
+SHA1-Digest: 9bYOyriUB+kjLduDHS+0LzQvAW8=
+
+Name: assets/res/8.png
+SHA1-Digest: ZiJYfrZk/Qt5fqHHjI1j1d1pN/0=
+
+Name: assets/res/rise.png
+SHA1-Digest: F3jNRJAwFC4odp4/EcQHnrHHWxk=
+
+Name: assets/res/6.png
+SHA1-Digest: hhT12VU8FttbKnnEiCM/Ejs5P7g=
+
+Name: assets/res/5.png
+SHA1-Digest: uHwoZ1DIzVOheLvmT2W0A/Q700M=
+
+Name: assets/res/7.png
+SHA1-Digest: yt8qFiwkbO7HxBOx7cQCONifh8Q=
+
+Name: assets/res/notfound.png
+SHA1-Digest: 0axhztwWWChAwT/1epvQRVgxFco=
+

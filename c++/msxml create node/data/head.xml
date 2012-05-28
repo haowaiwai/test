@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<RECEIVERULE>
+		<CycleTime>600</CycleTime>
+		<nReceiveRule>3</nReceiveRule>
+		<FixedTime num="4">
+			<time>8:00</time>
+			<time>11:30</time>
+			<time>13:00</time>
+			<time>17:00</time>
+		</FixedTime>
+		<ReceiveContent num="2">
+			<content>C30001</content>
+			<content>C10001</content>
+		</ReceiveContent>
+	</RECEIVERULE>
+	<APP id="AD00002" name="BWS" type="mot">
+		<CHANNEL id="C10001" name="BWS" type="DD">
+			<proglist>
+				<day>
+					<prog>
+						<description></description>
+						<startTime></startTime>
+						<endTime></endTime>
+					</prog>
+				</day>
+			</proglist>
+			<SERVICE>
+				<type>MOT</type>
+				<frequency>210432000</frequency>
+				<bandwidth>0</bandwidth>
+				<EIdx>0</EIdx>
+				<serviceId>4039114761</serviceId>
+				<SCIdS>0</SCIdS>
+				<Timeout>300</Timeout>
+			</SERVICE>
+		</CHANNEL>
+	</APP>
+	<APP id="AD00003" name="ITS" type="mot">
+		<CHANNEL id="C20001" name="GPS" type="DD">
+			<proglist>
+				<day>
+					<prog>
+						<description></description>
+						<startTime></startTime>
+						<endTime></endTime>
+					</prog>
+				</day>
+			</proglist>
+			<SERVICE>
+				<type>MOT</type>
+				<frequency>208720000</frequency>
+				<bandwidth>8</bandwidth>
+				<EIdx>0</EIdx>
+				<serviceId>4039114759</serviceId>
+				<SCIdS>0</SCIdS>
+				<Timeout>60</Timeout>
+			</SERVICE>
+		</CHANNEL>
+	</APP>
+	<APP id="AD00004" name="dazhe" type="mot">
+		<CHANNEL id="C30001" name="dazhe" type="DD">
+			<proglist>
+				<day>
+					<prog>
+						<description></description>
+						<startTime></startTime>
+						<endTime></endTime>
+					</prog>
+				</day>
+			</proglist>
+			<SERVICE>
+				<type>MOT</type>
+				<frequency>212144000</frequency>
+				<bandwidth>0</bandwidth>
+				<EIdx>0</EIdx>
+				<serviceId>4039114759</serviceId>
+				<SCIdS>0</SCIdS>
+				<Timeout>100</Timeout>
+			</SERVICE>
+		</CHANNEL>
+	</APP>
+</SI>

@@ -1,0 +1,83 @@
+// AXSample.idl : AXSample 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(AXSample.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "atliface.idl";
+
+[
+	object,
+	uuid(1E03BF60-02DB-4587-B793-C4EE48279AA9),
+	dual,
+	nonextensible,
+	helpstring("IAXSampleCtl 接口"),
+	pointer_default(unique)
+]
+interface IAXSampleCtl : IDispatch{
+	[id(1), helpstring("方法get")] HRESULT get(void);
+	[propget, id(2), helpstring("属性 PicFile")] HRESULT PicFile([out, retval] BSTR* pVal);
+	[propput, id(2), helpstring("属性 PicFile")] HRESULT PicFile([in] BSTR newVal);
+	[propget, id(3), helpstring("属性 PicPath")] HRESULT PicPath([in] BSTR ProgramPath, [out, retval] BSTR* pVal);
+	[propput, id(3), helpstring("属性 PicPath")] HRESULT PicPath([in] BSTR ProgramPath, [in] BSTR newVal);
+	[id(4), helpstring("方法GetPicPath")] HRESULT GetPicPath([in] BSTR ProgramPath, [out] BSTR* PicPath);
+	[id(5), helpstring("方法SetPicPath")] HRESULT SetPicPath([in] BSTR PicPath);
+	[id(6), helpstring("方法SearchFile")] HRESULT SearchFile(void);
+	[id(7), helpstring("方法Start")] HRESULT Start(void);
+	[id(8), helpstring("方法test")] HRESULT test([out] VARIANT* ll);
+	[id(9), helpstring("方法GetFileList")] HRESULT GetFileList([out,retval] VARIANT* pList);
+	[propget, id(10), helpstring("属性 OnChange")] HRESULT OnChange([out, retval] IDispatch** pVal);
+	[propput, id(10), helpstring("属性 OnChange")] HRESULT OnChange([in] IDispatch* newVal);
+};
+[
+	object,
+	uuid(B68D04E3-2F7B-4565-85A9-D93B7AFE34EC),
+	dual,
+	nonextensible,
+	helpstring("ITestCtl 接口"),
+	pointer_default(unique)
+]
+interface ITestCtl : IDispatch{
+	[propget, id(1), helpstring("属性 OnState")] HRESULT OnState([out, retval] IDispatch** pVal);
+	[propput, id(1), helpstring("属性 OnState")] HRESULT OnState([in] IDispatch* newVal);
+	[id(2), helpstring("方法test")] HRESULT test(void);
+};
+[
+	uuid(0A55D180-2587-41D6-8BC7-DA63A0F43096),
+	version(1.0),
+	helpstring("AXSample 1.0 类型库")
+]
+library AXSampleLib
+{
+	importlib("stdole2.tlb");
+	interface IDocHostUIHandlerDispatch;
+	interface IAxWinAmbientDispatchEx;
+	[
+		uuid(E9CFE582-8937-4F7D-AFA0-00D14B28A191),
+		helpstring("AXSampleCtl Class")
+	]
+	coclass AXSampleCtl
+	{
+		[default] interface IAXSampleCtl;
+	};
+	[
+		uuid(75667C0A-1FAB-45C5-8B67-B919F6E98338),
+		helpstring("_ITestCtlEvents 接口")
+	]
+	dispinterface _ITestCtlEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(0C05DDCB-049A-42FE-8B0F-05F4AEE99AEA),
+		helpstring("TestCtl Class")
+	]
+	coclass TestCtl
+	{
+		[default] interface ITestCtl;
+		[default, source] dispinterface _ITestCtlEvents;
+	};
+};

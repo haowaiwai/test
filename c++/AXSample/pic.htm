@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<TITLE>ActiveX Sample</TITLE>
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="getPath.js"></script>
+ <script type="text/javascript">
+document.write('<style>');
+document.write('.axx{padding:1px 10px;border-left:#cccccc 1px solid;}');
+document.write('a.axx:link,a.axx:visited{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#666;}');
+document.write('a.axx:active,a.axx:hover{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#999;}');
+document.write('.bxx{padding:1px 7px;border-left:#cccccc 1px solid;}');
+document.write('a.bxx:link,a.bxx:visited{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#D34600;}');
+document.write('a.bxx:active,a.bxx:hover{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#D34600;}');
+document.write('</style>');
+
+			var path = getPath("pic");
+			var arr = null;
+			var page = 0;
+			fetchArray();
+			var counts = arr.length;
+      $(document).ready(function() {	
+       for(var i=1;i<=counts;i++){
+       	$('#page').append('<a href="javascript:show('+i+');"  id="xxjdjj'+i+'" class="axx" target="_self">'+i+'</a>');	
+       	}
+       	show(1);
+        setInterval(autoShow,3000);
+        
+      function autoShow()
+      {
+				if(page<counts){
+					page++;
+					}else{
+						page =1;
+					}
+				for (var i=1;i<=counts;i++){document.getElementById("xxjdjj"+i).className='axx';}
+				document.getElementById("xxjdjj"+page).className='bxx';
+				fileName = arr[page-1];				
+        $("#pic1").attr("src",path+fileName); 
+      }
+       });
+      function show(i)
+      {  	
+      	page=i;
+        filename = arr[i-1];
+        for (var i=1;i<=counts;i++){document.getElementById("xxjdjj"+i).className='axx';}
+				document.getElementById("xxjdjj"+page).className='bxx';
+        $("#pic1").attr("src",path+filename); 
+      }
+      
+      function fetchArray(){
+      	arr = new Array("1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","5.jpg");
+			} 
+ </script>
+</HEAD>
+<BODY>
+<div>
+<img id="pic1"  src="" style="border:0px;filter:progid:dximagetransform.microsoft.wipe(gradientsize=1.0,wipestyle=4, motion=forward)" width="300" height="180" />
+</div>
+<div id="page" style="text-align:right;width=300; height=180; "> </div>
+</BODY>
+</HTML>

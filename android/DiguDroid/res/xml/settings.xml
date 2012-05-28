@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  偏好设置界面定义
+  @author belltoy<belltoy@gmail.com>
+  @homepage http://belltoy.net/
+  @version 1.0
+-->
+
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/settings_profile">
+
+        <EditTextPreference
+            android:key="username"
+            android:singleLine="true"
+            android:title="@string/settings_username_title"
+            android:summary="@string/settings_username_summary"
+            android:dialogTitle="@string/settings_username_dialog_title" />
+
+        <EditTextPreference
+            android:key="password"
+            android:password="true"
+            android:singleLine="true"
+            android:title="@string/settings_password_title"
+            android:summary="@string/settings_password_summary"
+            android:dialogTitle="@string/settings_password_dialog_title" />
+
+    </PreferenceCategory>
+                
+    <PreferenceCategory
+            android:title="@string/settings_system">
+
+        <CheckBoxPreference
+            android:key="settings_is_shield_sys"
+            android:title="@string/settings_is_on_tray_title"
+            android:summary="@string/settings_is_on_tray_summary" />
+
+        <ListPreference
+                android:key="settings_delay"
+                android:defaultValue="@string/settings_update_default"
+                android:title="@string/settings_update_title"
+                android:summary="@string/settings_update_summary"
+                android:entries="@array/settings_update_entries"
+                android:entryValues="@array/settings_update_entryvalues"
+                android:dialogTitle="@string/settings_update_dialog_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

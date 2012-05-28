@@ -1,0 +1,27 @@
+HKCR
+{
+	AXSample.AXSampleCtl.1 = s 'AXSampleCtl Class'
+	{
+		CLSID = s '{E9CFE582-8937-4F7D-AFA0-00D14B28A191}'
+	}
+	AXSample.AXSampleCtl = s 'AXSampleCtl Class'
+	{
+		CLSID = s '{E9CFE582-8937-4F7D-AFA0-00D14B28A191}'
+		CurVer = s 'AXSample.AXSampleCtl.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E9CFE582-8937-4F7D-AFA0-00D14B28A191} = s 'AXSampleCtl Class'
+		{
+			ProgID = s 'AXSample.AXSampleCtl.1'
+			VersionIndependentProgID = s 'AXSample.AXSampleCtl'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Free'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{0A55D180-2587-41D6-8BC7-DA63A0F43096}'
+		}
+	}
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<drawable name="transparent_background">#55000000</drawable>
+	<color name="gray">#999</color>
+	<color name="white">#fff</color>
+	<color name="black">#000</color>
+	<color name="green">#696</color>
+	<color name="red">#c66</color>
+	<color name="blue">#369</color>
+	<color name="brown">#c96</color>
+	<color name="purple">#969</color>
+	<color name="orange">#f63</color>
+	<color name="pink">#ff3399</color>
+	<color name="yellow">#ffff00</color>
+	<color name="none">#00000000</color>
+	<color name="blue_2">#0033ff</color>
+	
+	<color name="alpha_white">#88ffffff</color>
+	<color name="alpha_gray">#55555555</color>
+	<color name="alpha_black">#33000000</color>
+	<color name="alpha_blue">#990066cc</color>
+	<color name="alpha_gigi">#99cccccc</color>
+	<color name="alpha_g2">#99666666</color>
+	<!-- For List -->
+	<color name="common_buttonCharColor">#000000</color>
+	<color name="common_charColor">#ffffff</color>	
+	<drawable name="translucent_background">#e0000000</drawable>
+  <drawable name="transparent_background1">#00000000</drawable>
+</resources>

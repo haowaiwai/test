@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>ActiveX Sample</title>
+    <link type="text/css" rel="stylesheet" href="style.css" mce_href="style.css" />
+
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+
+    <script language="JScript">
+       
+            
+       function onState(a)
+{
+	var b = new VBArray(a);
+    var c = b.toArray();
+	alert(c[0] + '--' + c[1]);
+}
+       var test = new ActiveXObject('AXSample.TestCtl'); 
+       test.OnState=onState;
+        test.test(); 
+        $(document).ready(function() {
+            
+       });
+       
+    </script>
+
+</head>
+<body>
+    <div class="news" />
+</body>
+</html>
