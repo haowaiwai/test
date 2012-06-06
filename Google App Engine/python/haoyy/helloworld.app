@@ -20,7 +20,7 @@ class MainPage(webapp2.RequestHandler):
         else:
             if not memcache.add("greetings", "1", 10):
                 logging.error("Memcache set failed.")
-            return greetings
+            return "1"
 
 app = webapp2.WSGIApplication([('/', MainPage)],
                               debug=True)
