@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+	html { height: 100% }
+	body { height: 100%; margin: 0px; padding: 0px }
+	#map_canvas { height: 100% }
+</style>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript"> 
+var map;
+var array = [[41.774166667, 85.943055556], [43.864052, 87.560499]];//经纬度
+var array1 = ["地点1", "地点3"];
+var latitude = 0;
+var longitude = 0;
+var markersArray = [];
+var title = "新疆";
+var openInfo = "";
+
+function initialize() {
+    
+    var i = 0;
+    var k = 0;
+    var myLatlng = new google.maps.LatLng(41.774166667, 85.943055556); //初始定位
+    var myOptions = {
+        zoom : 8, //地图的缩放程度
+        center : myLatlng, //地图中心位置
+        mapTypeId : google.maps.MapTypeId.ROADMAP, //常量ROADMAP以地图显示 常量SATELLITE为卫星显示
+        disableDoubleClickZoom : true //禁用双击缩放地图
+    };
+    
+    //把地图绑定在ID为map_canvas的DIV上
+    map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    
+    
+    //循环将数据填充到一个新的marker对象中
+    for (i = 0; i < array.length; i++) {
+        
+        var myLatlng = new google.maps.LatLng(array[i][k], array[i][k + 1]);//重新定位
+        //显示信息
+        openInfo = array1[i];
+        //显示地址的标记图标
+        var marker = new google.maps.Marker({
+                position : myLatlng,
+                map : map,
+                icon : 'http://www.yiyacn.com/uploads/tubiaoimg/icon/fatcow_027.png' //自定义标记图标
+            });
+        marker.setTitle(title);
+        alertTitle(marker, openInfo);
+    };
+    
+    //infowindow.open(map);   //加载时显示提示主窗口
+    
+    
+    var infowindow;
+    var infowindow2;
+    //提示信息窗口
+    function alertTitle(marker, openInfo) {
+        
+        //鼠标悬浮在标记上打开提示信息窗口
+        google.maps.event.addListener(marker, 'mouseover', function (event) {
+            infowindow2 = infowindow;
+            infowindow = new google.maps.InfoWindow({
+                    content : openInfo,
+                    position : myLatlng
+                });
+            if (infowindow2 != null) {
+                infowindow2.close();
+            }
+            infowindow.open(map, marker);
+            
+        });
+        
+        //鼠标离开标记关闭提示信息窗口
+        //google.maps.event.addListener(marker, 'mouseout', function(event) {
+        //infowindow.close();
+        //});
+    };
+    
+    //给map添加双击事件
+    google.maps.event.addDomListener(map, 'dblclick', function (event) {
+        
+        placeMarker(event.latLng);
+        CreateDiv(event.latLng);
+        
+    });
+    
+    //添加新的标识
+    function placeMarker(location) {
+        if (infowindow2 != null) {
+            infowindow2.close();
+        }
+        if (infowindow != null) {
+            infowindow.close();
+        }
+        marker = new google.maps.Marker({
+                position : location,
+                map : map,
+                title : title,
+                icon : 'http://www.yiyacn.com/uploads/tubiaoimg/icon/fatcow_027.png' //自定义标记图标
+                
+            });
+        clearOverlays();
+        markersArray.push(marker); //把marker对象添加到markersArray数组中
+        map.setCenter(location); //重新定位中心位置
+        
+    }
+    
+    //创建操作层
+    function CreateDiv(location) {
+        var array = location.toString().split(","); //经纬度
+        
+        var contentString = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h1 id="firstHeading" class="firstHeading">选择操作</h1>' +
+            '<div id="bodyContent">' +
+            '<p><b>当前的纬度' + array[0] + ',经度' + array[1] + '</b></p>' +
+            '</div>' +
+            '</div>';
+        
+        var infowindow = new google.maps.InfoWindow({
+                content : contentString
+            });
+        
+        infowindow.open(map, marker);
+        
+    }
+    
+    //重置Map对象
+    function clearOverlays() {
+        //alert(markersArray);
+        if (markersArray) {
+            for (i in markersArray) {
+                markersArray[i].setMap(null);
+            }
+        }
+    }
+    
+}
+
+//window.onload = initialize;
+</script>
+</head>
+<body onload="initialize()">
+	<div id="map_canvas" style="width:100%; height:100%"></div>
+</body>
+</html>
