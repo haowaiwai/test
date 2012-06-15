@@ -22,5 +22,4 @@ class MainPage(webapp2.RequestHandler):
                 logging.error("Memcache set failed.")
             return greetings
 
-app = webapp2.WSGIApplication([('/', MainPage)],
-                              debug=True)
+app = webapp2.WSGIApplication([('/', MainPage)],debug=True)

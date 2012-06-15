@@ -37,6 +37,30 @@ body {
          font-family: Tahoma;
          color: #CCCCCC;
 }
+.STYLE10 {	font-size: 12px;
+	color: #CCCCCC;
+}
+A:link {
+	font-family:Tahoma
+	FONT-SIZE: 12px; COLOR: #ff0000; TEXT-DECORATION: none   
+}   
+A:visited {   
+	font-family:Tahoma
+	FONT-SIZE: 12px; COLOR: #ff0000; TEXT-DECORATION: none   
+}   
+A:active {   
+	font-family:Tahoma
+	 FONT-SIZE: 12px; COLOR: #ff0000; TEXT-DECORATION: none   
+}   
+A:hover {   
+	font-family:Tahoma
+	FONT-SIZE: 12px; COLOR: #ff0000; TEXT-DECORATION: none   
+}
+.STYLE2 {
+	color: #999999;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+}
 -->
 </style>
 </head>
@@ -127,12 +151,13 @@ body {
 		  echo iconv("UTF-8","GBK",$content);
 		  ?>
             <br/>--------------------------------------------<br />
-            NAN MADE IT Shop<br />
-            店址:朝阳路朝青汇三层<br />
-            電話:18601328129</p>
-          <p align="left" class="STYLE5"><span class="STYLE9">官方網站:http://www.nanmadeit.com/<br />
-            官方微博:http://<br />
-            官方淘寶線上商店:<a href="http://nanmadeit.taobao.com" target="_blank">http://nanmadeit.taobao.com</a>
+            <span class="STYLE5 STYLE4 STYLE7">NANMADEIT store</span></p>
+          <p align="left" class="STYLE5"><span class="STYLE5 STYLE4 STYLE7">店址:北京市朝阳区兴隆西街二号世纪天乐-潮青汇 三层3058</span></p>
+          <p align="left" class="STYLE5"><span class="STYLE5 STYLE4 STYLE7">電話:13811299051 &nbsp;&nbsp;18601328129</span></p>
+          <p align="left" class="STYLE5 STYLE4 STYLE7"><span class="STYLE9">官方邮箱:nanmadeit@gmail.com</span> </p>
+          <p align="left" class="STYLE10"><span class="STYLE9">官方網站:http://www.nanmadeit.com/</span></p>
+          <p align="left" class="STYLE10"><span class="STYLE9">官方微博:<a href="http://weibo.com/nanmadeit" target="_blank">http://weibo.com/nanmadeit</a></span></p>
+          <p align="left" class="STYLE5"><span class="STYLE9">官方淘寶線上商店:<a href="http://nanmadeit.taobao.com" target="_blank">http://nanmadeit.taobao.com</a>
 			</span></p>          
           <p class="STYLE4">&nbsp;</p></td>
       </tr>

@@ -19,17 +19,11 @@ function SetHome() {
 
 function SetFavorite(){
 	url = "http://www.nanmadeit.com";
-	title = "描述"
-	try
-	{
-		if (document.all)
-			window.external.AddFavorite(url, title); 
-		else if (window.sidebar)
-			window.sidebar.addPanel(title, url, "");
+	try{
+		window.external.AddFavorite(url,document.title);
 	}
-	catch(e)
-	{
-		alert("您的浏览器不支持自动加入收藏，请手动设置！", "提示信息");
+	catch(e){
+		alert("请按 Ctrl-D 收藏本站");
 	}
 } 
 </script>
@@ -38,7 +32,7 @@ function SetFavorite(){
 <td width="600"></td>
 <td><a href="http://nanmadeit.taobao.com"><img src="http://www.nanmadeit.com/img/f01.png" width="44" border="0"></img></a></td>
 <td><a href="javascript:SetFavorite()"><img src="http://www.nanmadeit.com/img/g01.png" border="0"></img></a></td>
-<td><img src="http://www.nanmadeit.com/img/h01.png" border="0"></img></td>
+<td><a href="http://www.nanmadeit.com/lianxi/lianxi.php"><img src="http://www.nanmadeit.com/img/h01.png" border="0"></img></td>
 <td><a href="javascript:SetHome()"><img src="http://www.nanmadeit.com/img/i01.png" border="0"></img></a></td>
 </tr>
 </table>

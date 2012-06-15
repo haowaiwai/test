@@ -1,0 +1,7 @@
+Server has started.
+Request for / received.
+About to route a request for /
+Request handler 'start' was called.
+Request for /favicon.ico received.
+About to route a request for /favicon.ico
+No request handler found for /favicon.ico

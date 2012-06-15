@@ -144,17 +144,19 @@ if($end  > $len )
           </td>
       </tr>
       <tr valign="top">
-        <td><p class="STYLE4 STYLE6">NANMADEIT ALL TEE</p>
-          <p align="left" class="STYLE5 STYLE4 STYLE7">此番推出的&quot;CHN-51&quot;短TEE，為2012開始<br />
-            NAN MADE IT 所發表的&quot;CASINO LIFE&quot;主題系列產品，設計概念延伸於&quot;CASINO LIFE&quot;主題， 以&quot;ROBBING THE POOR TO FEED THE RICH(劫貧濟富)&quot;作為標語，並將經典遊戲中的富人角色改以小偷形象巧妙的翻玩詮釋， 暗喻資本主義為人詬病的黑暗面，是一款極為諷刺且具有相當創意的反骨作品,值得細細玩味!<br />
+        <td><p class="STYLE4 STYLE6">NANMADEIT since 2012 </p>
+          <p align="left" class="STYLE5 STYLE4 STYLE7">2009年NANMADEIT诞生于北京东城。以混不吝的劲头杀入京城潮圈。开篇之作“北京帮派”系列以其融合京味文化的独特设计而深受广大京城潮人欢迎。2012年NANMADEIT整装待发，于北京朝阳开启第一家实体店铺。并一举推出“复仇者联盟”，“北京制造”等多个系列Tee。敬请期待！<br />
             -------------------------------------------------------------------<br />
-            NAN MADE IT Shop<br />
-            店址:朝阳路朝青汇三层<br />
-            電話:18601328129</p>
-          <p align="left" class="STYLE5"><span class="STYLE9">官方網站:http://www.nanmadeit.com/<br />
-            官方微博:http://<br />
-            官方淘寶線上商店:&nbsp<a href="http://nanmadeit.taobao.com" target="_blank">http://nanmadeit.taobao.com</a>
-			</span></p>          
+            NANMADEIT store          
+          <p align="left" class="STYLE5 STYLE4 STYLE7">店址:北京市朝阳区兴隆西街二号世纪天乐-潮青汇 三层3058          
+          <p align="left" class="STYLE5 STYLE4 STYLE7">電話:13811299051 &nbsp;&nbsp;18601328129
+          <p align="left" class="STYLE5 STYLE4 STYLE7"><span class="STYLE9">官方邮箱:nanmadeit@gmail.com</span>
+          
+          <p align="left" class="STYLE5"><span class="STYLE9">官方網站:http://www.nanmadeit.com/</span></p>
+          <p align="left" class="STYLE5"><span class="STYLE9">官方微博:<a href="http://weibo.com/nanmadeit" target="_blank">http://weibo.com/nanmadeit</a><br />
+            </span><span class="STYLE9"><br />
+              官方淘寶線上商店:<a href="http://nanmadeit.taobao.com" target="_blank">http://nanmadeit.taobao.com</a>
+            </span></p>
           <p class="STYLE4">&nbsp;</p></td>
       </tr>
     </table></td>
